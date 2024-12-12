@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp">
+
+
+    <ImageView
+        android:id="@+id/get_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="Food Image"
+        android:src="@drawable/images"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/get_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="10dp"
+        android:text="Restaurant Name"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/get_image"
+        app:layout_constraintStart_toStartOf="@id/get_image"
+        app:layout_constraintTop_toBottomOf="@id/get_image" />
+
+    <TextView
+        android:id="@+id/get_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="10dp"
+        android:text="Restaurant Address"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/get_name"
+        app:layout_constraintStart_toStartOf="@id/get_name"
+        app:layout_constraintTop_toBottomOf="@id/get_name" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
